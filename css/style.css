@@ -1,0 +1,269 @@
+:root {
+    --cinza: #3A404E;
+    --cinza-claro: #667085;
+    --cinza-escuro: #101828;
+    --cor-claro: #EAECF0;
+    --cor-rodape: #F9FAFB;
+    --marrom: #8E2424;
+    --marrom-transparente: rgba(142, 36, 36, 0.05);
+    --branco: #FFFFFF;
+    --fonte-principal: 'Inter', sans-serif;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* CABEÇALHO */
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.5em 4em;
+}
+
+.cabecalho__menu {
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho__titulo {
+    padding: 0 0.5em;
+    color: var(--cinza);
+    font-size: 18px;
+}
+
+.cabecalho__lista-menu {
+    display: flex;
+    margin-left: 5em;
+}
+
+.lista-menu__link, .cabacalho__botao-entrar {
+    color: var(--cinza-claro);
+    margin-right: 1.5em;
+}
+
+.cabacalho__botao-cadastrar {
+    background-color: var(--marrom);
+    color: var(--branco);
+    padding: 10px 18px;
+    border-radius: 8px;
+}
+
+/* Principal */
+
+.principal {
+    width: 60%;
+    margin: 6em 20%;
+    text-align: center;
+}
+
+.principal__inicio {
+    color: var(--marrom);
+    font-weight: 600;
+}
+
+.principal__titulo {
+    color: var(--cinza-escuro);
+    font-size: 48px;
+    font-weight: 600;
+    padding: 1em 0;
+}
+
+.principal__texto {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--cinza-claro);
+}
+
+/* Numeros */
+
+.numeros__lista {
+    margin: 7em;
+    display: flex;
+    align-items: center;
+}
+
+.numeros__item {
+    width: 20%;
+    margin: 0 2em;
+}
+
+.numeros__valor {
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--marrom);
+}
+
+.numeros__titulo {
+    font-size: 18px;
+    color: var(--cinza-escuro);
+    padding: 1em 0;
+}
+
+.numeros__texto {
+    font-weight: 400;
+    color: var(--cinza-claro);
+}
+
+/* Banner */
+
+.banner {
+    text-align: center;
+    margin: 0 2em;
+}
+
+.banner__tag {
+    background-color: var(--marrom-transparente);
+    color: var(--marrom);
+    padding: 0.5em 1em;
+    border-radius: 16px;
+    font-size: 14px;
+}
+
+.banner__titulo {
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0.5em 0;
+    color: var(--cinza-escuro);
+}
+
+.banner__texto {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--cinza-claro);
+}
+
+.banner__imagem {
+    width: 90%;
+    margin: 4em 0;
+}
+
+/* Quadro de vagas */
+
+.vagas {
+    width: 50%;
+    margin: 0 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vagas__opcao {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.vagas__titulo {
+    font-size: 20px;
+    margin-bottom: 1em;
+    color: var(--cinza-escuro);
+}
+
+.lista-vagas__opcao {
+    margin-bottom: 1em;
+    border: 1px solid var(--cor-claro);
+    border-radius: 16px;
+    padding: 1.5em;
+}
+
+.lista-vagas__titulo {
+    font-size: 18px;
+    color: var(--cinza-escuro);
+    margin-bottom: 2em;
+}
+
+.lista-vagas__texto {
+    display: flex;
+    gap: 20px;
+    color: var(--cinza-claro);
+}
+
+/* Comentário */
+
+.comentario {
+    background-color: var(--marrom-transparente);
+    margin: 2em 7em 5em 7em;
+    padding: 2.5em;
+    text-align: center;
+    border-radius: 16px;
+}
+
+.comentario__tag {
+    color: var(--marrom);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.comentario__titulo {
+    color: var(--cinza-escuro);
+    font-size: 34px;
+    margin: 0.5em 0;
+}
+
+.comentario__imagem {
+    padding: 0.5em 0;
+}
+
+.comentario__texto-area {
+    color: var(--cinza-claro);
+    padding-top: 0.5em;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Rodapé */
+
+.rodape {
+    background-color: var(--cor-rodape);
+    text-align: center;
+    padding: 5em;
+}
+
+.rodape__titulo {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--cinza-escuro);
+}
+
+.rodape__texto {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--cinza-claro);
+    margin: 1em 0;
+}
+
+.rodape__input{
+    margin: 2em 0;
+}
+
+.rodape__input-email {
+    width: 30%;
+    border: 1px solid var(--cor-claro);
+    padding: 0.5em;
+    border-radius: 6px;
+    margin-right: 0.5em;
+}
+
+.rodape__input-email::placeholder {
+    font-family: var(--fonte-principal);
+    color: var(--cinza-claro);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.rodape__input-botao {
+    background-color: var(--marrom);
+    color: var(--branco);
+    border-radius: 6px;
+    padding: 0.5em 1em;
+    font-size: 16px;
+}
+
+.rodape__direitos {
+    color: var(--cinza-claro);
+    font-weight: 400;
+}
